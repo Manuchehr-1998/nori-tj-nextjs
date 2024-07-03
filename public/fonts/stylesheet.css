@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Aqum';
+    src: url('Aqum.eot');
+    src: local('Aqum'),
+        url('Aqum.eot?#iefix') format('embedded-opentype'),
+        url('Aqum.woff2') format('woff2'),
+        url('Aqum.woff') format('woff'),
+        url('Aqum.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

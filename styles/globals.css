@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aqum";
+  src: url("/fonts/Aqum.eot");
+  src: local("Aqum"), url("/fonts/Aqum.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Aqum.woff2") format("woff2"),
+    url("/fonts/Aqum.woff") format("woff"),
+    url("/fonts/Aqum.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.font-aqum {
+  font-family: "Aqum", sans-serif;
+}
