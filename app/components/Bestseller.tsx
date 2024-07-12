@@ -130,16 +130,19 @@ const Bestseller: FC = () => {
                   <div className="h-[100px]">
                     <p className="mb-3 font-normal text-[13px]">{item.title}</p>
                   </div>
-                  <div className="mt-[20px] flex justify-center items-center gap-4">
+                  <div className="mt-[20px] flex  items-center justify-between w-full">
                     <p className="text-[22px]">{item.price}</p>
-                    <button className="px-3 pb-2 pt-2 m-2 bg-yellow-500 rounded-2xl flex gap-2 text-black items-center text-[12px]">
+
+                    <button className="px-3 pb-2   pt-2 m-2 bg-yellow-500 rounded-2xl flex gap-2 text-black items-center text-[16px]">
                       в корзину
-                      <Image
-                        src="/svg/basket-black.svg"
-                        alt="Ваша иконка"
-                        width={18}
-                        height={17}
-                      />
+                      <div>
+                        <Image
+                          src="/svg/basket-black.svg"
+                          alt="Ваша иконка"
+                          width={18}
+                          height={17}
+                        />
+                      </div>
                     </button>
                   </div>
                 </div>

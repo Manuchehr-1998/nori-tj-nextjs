@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 
 const data = [
@@ -69,7 +68,7 @@ const data = [
 ];
 const NoriRecommends = () => {
   return (
-    <div className="w-full text-white m-auto">
+    <div className="w-full text-white m-auto mb-[116px]">
       <div>
         <div className="flex items-center justify-start w-[90%] m-auto gap-4 mb-2">
           <Image src="/images/Nori-icon.png" alt="" width={100} height={100} />

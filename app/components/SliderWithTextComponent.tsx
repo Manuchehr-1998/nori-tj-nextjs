@@ -29,13 +29,13 @@ const SliderWithTextComponent: React.FC<SliderWithTextProps> = ({
   images,
 }) => {
   return (
-    <div className="flex my-slider-with-text text-white pt-12 pb-12 justify-evenly items-center">
+    <div className="flex my-slider-with-text  pt-12 pb-12 justify-evenly items-center">
       <div className="p-10 w-[45%]">
-        <h1 className="text-[40px] uppercase font-bold w-[400px] leading-[54px] font-aqum">
+        <h1 className="text-[40px] uppercase font-bold w-[400px] leading-[54px] font-aqum text-white">
           {splitTitle(title)}
         </h1>
-        <p className="text-lg">{description}</p>
-        <button className="p-2 m-2 bg-yellow-500 rounded-2xl">
+        <p className="text-lg text-white">{description}</p>
+        <button className="py-3 px-5 m-2 bg-yellow-500 rounded-2xl text-black">
           Оформить заказ
         </button>
       </div>
