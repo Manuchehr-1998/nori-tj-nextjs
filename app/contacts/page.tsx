@@ -8,25 +8,24 @@ const ContactsPage = () => {
     comment: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      // Example: Send form data to an API or perform other actions
-      console.log(formData);
-      alert("Form submitted successfully!"); // Replace with actual logic
-    } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Form submission error. Please try again.");
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     console.log(formData);
+  //     alert("Form submitted successfully!");
+  //   } catch (error) {
+  //     console.error("Form submission error:", error);
+  //     alert("Form submission error. Please try again.");
+  //   }
+  // };
 
   return (
     <div className="text-white">
@@ -71,12 +70,15 @@ const ContactsPage = () => {
         <h2 className="text-3xl font-bold mt-8 mb-4">
           Оставьте отзыв пожалуйста и получите скидку
         </h2>
-        <form onSubmit={handleSubmit} className="flex flex-col items-center">
+        <form
+          // onSubmit={handleSubmit}
+          className="flex flex-col items-center"
+        >
           <input
             type="text"
             name="name"
             value={formData.name}
-            onChange={handleChange}
+            // onChange={handleChange}
             placeholder="Ваше имя"
             className="p-2 mb-4 w-[477px] rounded-lg border border-gray-300 bg-purple-200 bg-opacity-20"
             required
@@ -85,7 +87,7 @@ const ContactsPage = () => {
             type="email"
             name="email"
             value={formData.email}
-            onChange={handleChange}
+            // onChange={handleChange}
             placeholder="Ваш email"
             className="p-2 mb-4 w-[477px] rounded-lg border border-gray-300 bg-purple-200 bg-opacity-20"
             required
@@ -93,7 +95,7 @@ const ContactsPage = () => {
           <textarea
             name="comment"
             value={formData.comment}
-            onChange={handleChange}
+            // onChange={handleChange}
             placeholder="Ваш комментарий"
             className="p-2 mb-4 w-[477px] h-32 rounded-lg border border-gray-300 resize-none bg-purple-200 bg-opacity-20"
             required
